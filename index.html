@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+     <header class="bg-primary text-white text-center p-4 mb-4">CRUD using web storage</header>
+     <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <form id="sdtForm">
+                    <!-- <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" required id="fname" class="form-control">
+                    </div> -->
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <div class="input-group">
+                            <input type="text" id="fname" required placeholder="Enter First Name" class="form-control">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-user-tie "></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <div class="input-group">
+                            <input type="text" id="lname" required placeholder="Enter Last Name" class="form-control">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-user-tie "></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>     
+                        <div class="input-group">
+                            <input type="text" required placeholder="Enter Your Email" id="email" class="form-control">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Contact</label> 
+                        <div class="input-group">
+                            <input type="text" required placeholder=" +91" id="contact" class="form-control">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-phone"></i>
+                                </span>
+                            </div>
+                        </div>
+                         
+                    </div>
+                    <div class="text-right mb-4">
+                        <button class="btn btn-primary" id="submitBtn" type="submit ">Add student</button>
+                        <button class="btn btn-warning d-none" id="updateBtn" type="button "> Update</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                           <tr>
+                               <th>SR no</th>
+                               <th>first name</th>
+                               <th>last name</th>
+                               <th>email</th>
+                               <th>contact</th>
+                               <th>Edit</th>
+                               <th>Delete</th>
+                           </tr>
+                        </thead>
+                        <tbody id="sdtbody">
+                           
+                        </tbody>
+                   </table>
+                </div>
+            </div>
+        </div>
+     </div>
+ 
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+      <script src="assets/js/app.js"></script>
+</body>
+</html>
